@@ -2,30 +2,34 @@
 markdown: redcarpet
 highlighter: pygments
 
-# Site settings
-title: "Mediator"
-description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+#GitHub pages overrides
+safe: true
+lsi: false 
 
-email: a-mail@mail.mail
+# Site settings
+title: "pick"
+description: > # this means to ignore newlines until "email:"
+   A Jekyll theme - Mediator forked, Medium inspired
+
+email: jclagache@gmail.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.svg"
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
-author_image: "/assets/images/author.jpg"
+name: 'Jean-Christophe Lagache'
+author: 'Jean-Christophe Lagache'
+author_image: "/assets/images/profile.png"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+url: "http://jclagache.me" # the base hostname & protocol for your site
 baseurl: ""
 
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
+    url:	https://twitter.com/jclagache
     desc: Follow me on twitter
     share_url: http://twitter.com/share
     share_title: ?text=
@@ -39,7 +43,7 @@ social:
 #    share_link: "&amp;u="
 
   - icon:	github
-    url:	https://github.com/dirkfabisch
+    url:	https://github.com/jclagache
     desc:	Fork me on github
     share_url:
     share_title:
