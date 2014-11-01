@@ -34,6 +34,7 @@ Main settings for the site
 * **title**: name of your site
 * **description**: description of your site
 * **logo**: small logo for the site
+* **cover**: bottom post page background image
 
 * **name**: name site owner
 * **email**: mail address of the site owner
