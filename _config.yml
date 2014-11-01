@@ -21,8 +21,8 @@ author_image: "/assets/images/profile.png"
 
 paginate:	5
 
-baseurl: "/pick/" # the subpath of your site, e.g. /blog/
-url: "http://jclagache.me" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pick.jclagache.me" # the base hostname & protocol for your site
 
 # social icons and sharing options
 social:
