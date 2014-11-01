@@ -6,11 +6,11 @@ layout: default
   <div class="blog-header-inner">
       <div class="blog-logo">
       {% if site.logo %}
-        <a href="{{site.url}}"><img src="{{site.logo}}" alt="{{site.title}}"></img></a>
+        <a href="{{site.baseurl}}"><img src="{{site.logo}}" alt="{{site.title}}"></img></a>
       {% endif %}
       </div>
-      <h1 class="blog-title">{{ site.title }}</h1>
-      <h2 class="blog-description">{{ site.description }}</h2>
+      <h1 class="blog-title">{{site.title}}</h1>
+      <h2 class="blog-description">{{site.description}}</h2>
       <div class="custom-links">
         {% for social in site.social %}
           <a class="icon-{{ social.icon }}" href="{{ social.url }}">
@@ -18,7 +18,7 @@ layout: default
           </a>
           &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endfor %}
-        <a href="/about/">About</a>
+        <a href="{{ "/about" | prepend: site.baseurl }}">About</a>
       </div>
       <div style="text-align:center">
         <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
@@ -31,10 +31,6 @@ layout: default
         "use strict";
 
         $(document).ready(function(){
-
-/*            var height = $('.blog-header').height() + 40;
-            $('.content').css('padding-top', height + 'px');*/
-
 
             $(function() {
               $('a[href*=#]:not([href=#])').click(function() {
@@ -65,7 +61,7 @@ layout: default
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
             <section class="post-excerpt" itemprop="description">
               <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
@@ -86,7 +82,7 @@ layout: default
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
             <section class="post-excerpt" itemprop="description">
               <p>{{ post.content | strip_html | truncatewords: 50 }}</p>

@@ -42,8 +42,12 @@
                   });
                   $window.trigger('scroll');
 
-                  var height = $('.article-image').height();
-                      $('.post-content').css('padding-top', height + 'px');
+                  function resizeArticleImage() {    
+                    var height = $('.article-image').height();
+                    $('.post-content').css('padding-top', height + 'px');          
+                  }
+
+                  $window.resize(resizeArticleImage).trigger("resize");                  
 
                   $(function() {
                     $('a[href*=#]:not([href=#])').click(function() {
@@ -92,7 +96,7 @@
           <section class="share">
             {% for social in site.social %}
               {% if social.share_url != null %}
-                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{page.title | cgi_escape}}{{ social.share_link }}{{site.url}}{{page.id}}"
+                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{page.title | cgi_escape}}{{ social.share_link }}{{site.baseurl}}{{page.id}}"
                   onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
                 <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
                 </a>
@@ -132,7 +136,7 @@
     <div class="inner">
       <h1 class="blog-title">{{ site.title }}</h1>
       <h2 class="blog-description">{{ site.description }}</h2>
-      <a href="/" class="btn">Back to Overview</a>
+      <a href="{{ site.baseurl | prepend: site.url }}" class="btn">Back to Overview</a>
     </div>
     </div>
   </body>

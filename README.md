@@ -1,14 +1,8 @@
-mediator
+pick
 ========
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](http://blog.base68.com).
-
-Screenshots
---------
-![screenshot](/assets/images/screenshot1.jpg)
-![screenshot](/assets/images/screenshot2.jpg)
-![screenshot](/assets/images/screenshot3.jpg)
+A medium inspired Jekyll blog theme. I made few changes to the Jekyll theme [Mediator](https://github.com/dirkfabisch/mediator) witch itself is inspired from the Ghost theme [Readium 2.0](http://www.svenread.com/readium-ghost-theme/).
+See it live here : [http://pick.jclagache.me](http://pick.jclagache.me)
 
 Features
 -------
@@ -21,8 +15,8 @@ Features
 
 Getting Started
 ---
-- [Fork this repository](https://github.com/dirkfabisch/mediator)
-- Clone it: `git clone https://github.com/YOUR-USER/mediator`
+- [Fork this repository](https://github.com/jclagache/pick)
+- Clone it: `git clone https://github.com/YOUR-USER/pick`
 - Install the [GitHub Pages gem](https://github.com/github/pages-gem) (includes Jekyll): `bundle install`
 - Run the jekyll server: `jekyll serve`
 
@@ -39,13 +33,15 @@ Main settings for the site
 
 * **title**: name of your site
 * **description**: description of your site
-* **logo**: small logo for the site (300x * 300x)
-* **cover**: large background image on the index page 
+* **logo**: small logo for the site
 
 * **name**: name site owner
 * **email**: mail address of the site owner
 * **author**: author name
 * **author_image**: small image of author (300x * 300px)
+
+* **baseurl**: the subpath of your site, e.g. /blog/
+* **url**: the base hostname & protocol for your site
 
  
 ### Social 
@@ -66,14 +62,14 @@ The Liquid template engine will magical combine the different parts to a share u
 http://twitter.com/share?text=post_title&amp;url=post_url
 ````
 
-See [_config.yml](https://github.com/dirkfabisch/mediator/blob/master/_config.yml) for more examples. 
+See [_config.yml](https://github.com/jclagache/pick/blob/master/_config.yml) for more examples. 
 
 Licensing
 ---------
 
-[MIT](https://github.com/dirkfabisch/madiator/blob/master/LICENSE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
+[MIT](https://github.com/jclagache/pick/blob/master/LICENCE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
 
 Contact
 -------
-I'd love to hear from you at [@dirkfabisch](https://twitter.com/dirkfabisch). Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.
+[@jclagache](https://twitter.com/jclagache)
 

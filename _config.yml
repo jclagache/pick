@@ -11,20 +11,18 @@ title: "pick"
 description: > # this means to ignore newlines until "email:"
    A Jekyll theme - Mediator forked, Medium inspired
 
-email: jclagache@gmail.com
+email: my-mail@gmail.com
 #blog logo
-logo: "/assets/images/logo.svg"
-# blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+logo: "/assets/images/pick.svg"
 
-name: 'Jean-Christophe Lagache'
-author: 'Jean-Christophe Lagache'
+name: 'Pick Jekyll theme'
+author: 'me'
 author_image: "/assets/images/profile.png"
 
 paginate:	5
 
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jclagache.me" # the base hostname & protocol for your site
-baseurl: ""
 
 # social icons and sharing options
 social:
@@ -35,23 +33,9 @@ social:
     share_title: ?text=
     share_link: "&amp;url="
 
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: //www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
   - icon:	github
     url:	https://github.com/jclagache
     desc:	Fork me on github
     share_url:
     share_title:
     share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
